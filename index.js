@@ -4,7 +4,7 @@ import axios from "axios";
 import { config } from "dotenv";
 config();
 
-const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true }); // Removed extra semicolon
+const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
