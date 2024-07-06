@@ -53,11 +53,17 @@ bot.onText(/\/chat (.+)/, async (msg, match) => {
 
     bot.sendChatAction(chatId, "typing");
 
+    // Add a delay before sending the message
+    await new Promise((resolve) => setTimeout(resolve, 2000)); // 2 seconds delay
+
     bot.sendMessage(chatId, botResponse);
   } catch (error) {
     console.error(error);
 
     bot.sendChatAction(chatId, "typing");
+
+    // Add a delay before sending the message
+    await new Promise((resolve) => setTimeout(resolve, 2000)); // 2 seconds delay
 
     bot.sendMessage(
       chatId,
