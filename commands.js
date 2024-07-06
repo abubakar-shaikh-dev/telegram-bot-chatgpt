@@ -1,5 +1,5 @@
 import axios from "axios";
-import bot from './bot';
+import bot from "./bot.js";
 
 export const handleStart = (msg) => {
   const chatId = msg.chat.id;
