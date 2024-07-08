@@ -30,8 +30,9 @@ Follow these instructions to set up and run the project on your local machine.
 
    - Create a file named `.env` in the root directory.
    - Add your environment variables by following the structure of `.env.local`.
-   <br>
+
    Example `.env` file:
+
    ```env
    BOT_TOKEN=your-telegram-bot-token
    RAPIDAPI_KEY=your-rapidapi-key
